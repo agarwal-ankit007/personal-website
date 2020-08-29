@@ -12,7 +12,7 @@
     - 08.0 Hero CSS
     - 09.0 Footer CSS
     - 10.0 Follow CSS
-    - 11.0 About CSS
+    - 11.0 Achievements CSS line 700
     - 12.0 Breadcrumb CSS
     - 13.0 Blog CSS
     - 14.0 Team CSS
@@ -127,7 +127,7 @@ ul {
   width: 100%;
   top: 20px;
   width: 30px;
-  background: #fc6060;
+  background: #008080;
   height: 30px;
   line-height: 30px; }
 
@@ -137,7 +137,7 @@ img.mfp-img {
 
 button.mfp-close,
 button.mfp-arrow {
-  background: #fc6060; }
+  background: #008080; }
 
 .mfp-bottom-bar {
   display: none !important; }
@@ -446,7 +446,7 @@ input:required {
   transition-duration: 500ms;
   letter-spacing: 1px; }
   .badges-btn:hover, .badges-btn:focus {
-    background-color: #fc6060;
+    background-color: #008080;
     color: #ffffff;
     font-weight: 500; }
 
@@ -600,7 +600,7 @@ input:required {
     .welcome-slides .owl-prev:hover, .welcome-slides .owl-prev:focus,
     .welcome-slides .owl-next:hover,
     .welcome-slides .owl-next:focus {
-      background-color: blue; }
+      background-color: #008080; }
     @media only screen and (min-width: 768px) and (max-width: 991px) {
       .welcome-slides .owl-prev,
       .welcome-slides .owl-next {
@@ -676,7 +676,7 @@ input:required {
         .footer-content .copywrite-text p {
           font-size: 12px; } }
       .footer-content .copywrite-text p a {
-        color: #fc6060;
+        color: #fc2030;
         font-weight: 400; }
         @media only screen and (max-width: 767px) {
           .footer-content .copywrite-text p a {
@@ -695,9 +695,29 @@ input:required {
         margin-right: 5px;
         font-size: 12px; } }
     .footer-content .social-info a:hover, .footer-content .social-info a:focus {
-      color: #fc6060; }
+      color: #fc2030; }
 
-/* :: 11.0 About CSS */
+/* :: 11.0 Achievements CSS */
+.visit:hover,.visit1:hover{
+  background: #fc2030;
+}
+
+.visit:focus,.visit1:focus{
+  background: #fc2030;
+}
+
+@media only screen and (max-width: 1400px){
+  .visit{
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 1400px){
+  .visit1{
+    display: none;
+  }
+}
+
 .about-us-content h3 {
   font-size: 36px;
   display: block;
@@ -708,7 +728,7 @@ input:required {
 .about-us-content .line {
   height: 3px;
   width: 70px;
-  background-color: #fc6060;
+  background-color: #fc2030;
   margin-bottom: 30px; }
 
 .about-video-area {
@@ -720,43 +740,6 @@ input:required {
     box-shadow: 3px 0 24px rgba(0, 0, 0, 0.15);
     width: 100%;
     border-radius: 10px; }
-  .about-video-area .video-icon a {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    z-index: 99;
-    -webkit-transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
-    color: #ffffff;
-    height: 50px;
-    width: 50px;
-    display: inline-block;
-    background-color: #fc6060;
-    text-align: center;
-    line-height: 56px;
-    font-size: 38px;
-    border-radius: 50%; }
-    .about-video-area .video-icon a::after {
-      content: '';
-      position: absolute;
-      width: 0%;
-      height: 0%;
-      border-radius: 50%;
-      background-color: transparent;
-      top: 50%;
-      left: 50%;
-      -webkit-transform: translate(-50%, -50%);
-      -ms-transform: translate(-50%, -50%);
-      transform: translate(-50%, -50%);
-      border: 2px solid #fc6060;
-      -webkit-animation: video-icon 1200ms linear infinite;
-      animation: video-icon 1200ms linear infinite;
-      z-index: -10; }
-    .about-video-area .video-icon a:hover, .about-video-area .video-icon a:focus {
-      background-color: #000000; }
-      .about-video-area .video-icon a:hover::after, .about-video-area .video-icon a:focus::after {
-        border: 2px solid #000000; }
 
 @-webkit-keyframes video-icon {
   0% {
@@ -801,7 +784,7 @@ input:required {
     transition-duration: 800ms;
     height: 76px;
     width: 76px;
-    background-color: #fc6060;
+    background-color: #fc2030;
     display: inline-block;
     text-align: center;
     line-height: 76px;
@@ -826,7 +809,7 @@ input:required {
     font-size: 14px;
     margin-bottom: 0; }
   .why-choose-us-content:hover, .why-choose-us-content:focus {
-    background-color: #fc6060; }
+    background-color: #fc2030; }
     .why-choose-us-content:hover .chosse-us-icon, .why-choose-us-content:focus .chosse-us-icon {
       background-color: #000000;
       box-shadow: 0 5px 15px 2px rgba(255, 255, 255, 0.15); }
@@ -834,6 +817,16 @@ input:required {
     .why-choose-us-content:hover p, .why-choose-us-content:focus h4,
     .why-choose-us-content:focus p {
       color: #ffffff; }
+.why-choose-us-content:hover .certificate{
+  background: black;
+}
+.certificate{
+  color: white;
+  background: #fc2030;
+  border-radius: 25px;
+  padding: 15px;
+  font-size: 20px;
+}
 
 /* :: 12.0 Breadcrumb CSS */
 .breadcrumb-area {
@@ -1423,7 +1416,7 @@ input:required {
       position: absolute;
       width: 0%;
       height: 3px;
-      background-color: #fc6060;
+      background-color: #008080;
       content: '';
       bottom: -5px;
       left: 0;
@@ -1469,7 +1462,7 @@ input:required {
       width: 52px;
       height: 52px;
       border-radius: 50%;
-      background-color: #fc6060;
+      background-color: #008080;
       text-align: center;
       line-height: 52px;
       font-size: 30px;
